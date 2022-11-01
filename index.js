@@ -17,26 +17,27 @@ while (seguirComprando === true) {
         producto = parseInt(prompt(`Elige el producto que deseas comprar: 1.Remera de Juego Roja - 2.Remera de Juego Blanca - 3.Sudadera Negra - 4-Buzo`))
         continue
     }
-decision = parseInt(prompt(`Quieres seguir comprando? 1.SI - 2.NO`))
+    decision = parseInt(prompt(`Quieres seguir comprando? 1.SI - 2.NO`))
     if (decision === 1) {
         producto = parseInt(prompt(`Elige el producto que deseas comprar: 1.Remera de Juego Roja - 2.Remera de Juego Blanca - 3.Sudadera Negra - 4-Buzo`))
     } else {
         seguirComprando = false
-    } 
+    }
 }
 
 registro = parseInt(prompt(`Desea recibir ofertas especiales? 1.SI - 2.NO`))
 
 function descuentoPorSuscripcion(totalCompra) {
     let importeConDescuento = totalCompra * 0.85
-    alert(`${nombre} Gracias por suscribirte a nuestro sitio. El importe de tu compra es ${totalCompra}` 
+    alert(`${nombre} Gracias por suscribirte a nuestro sitio. El importe de tu compra es ${totalCompra}`) 
     alert(`Si tu compra es mayor a $15.000, te regalamos 15% de descuento`)
 }
 
 if (totalCompra >= 15000) {
     descuentoPorSuscripcion(totalCompra)
-    alert(`${nombre} El importe de tu compra con descuento es ${importeConDescuento}` 
+    alert(`${nombre} El importe de tu compra con descuento es ${importeConDescuento}`) 
 }
-} else {
+else {
     alert(`${nombre} El total de tu compra es ${totalCompra}`)
-}    
+}  
+
