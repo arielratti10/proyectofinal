@@ -40,4 +40,3 @@ if (totalCompra >= 15000) {
 else {
     alert(`${nombre} El total de tu compra es ${totalCompra}`)
 }  
-
