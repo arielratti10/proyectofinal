@@ -46,12 +46,13 @@ productos.forEach((product) => {
         carritoCounter();
 
         Toastify({
-            text: "Agregado al carrito",
+            text: "✅ Agregado al carrito",
             duration: 3000,
             gravity: "top",
             position: "right",
             style: {
               background: "linear-gradient(to right, #00b09b, #96c93d)",
+              
             },
           }).showToast();
 
