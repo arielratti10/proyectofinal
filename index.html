@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ariel Ratti - JS - Trabajo Final</title>
+</head>
+
+<body>
+    <!--NavBar-->
+    <header>
+        <div class="nav-container">
+            <nav class="navBar">
+                <h1 class="navBar-logo">e-Shop</h1>
+                <h1 class="ver-carrito" id="verCarrito">🛒 <span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--Banner Principal-->
+        <div class="banner">
+            <div class="banner-container">
+                <h1>Tienda On Line</h2>
+                <p>Indumentaria Oficial ~ 🏀🎾⚽️🏐🥋</p>
+            </div>
+        </div>
+
+        <!--Shop Content-->
+        <div id="shopContent" class="shop-content"></div>
+        <div id="toastify" class="toastifyAlert"></div>
+
+        <!--Modal container-->
+        <div id="modal-container" class="modal-container"></div>
+    </main>
+
+    <footer id="divFooter" class="div-footer">
+        <div id="divDolar">
+        <span id="valorDolar"></span>
+        </div>    
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="products.js"></script>
+    <script src="carrito.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
